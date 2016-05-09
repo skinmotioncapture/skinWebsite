@@ -209,6 +209,9 @@ textarea:focus, input:focus{
 
 .main .subscribe .email-wrapper{
     flex-grow: 1000;
+}
+
+.main .subscribe .email{
     line-height: 2rem;
     border-bottom: #f16529 solid;
     border-top: none;
