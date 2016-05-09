@@ -58,6 +58,7 @@ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 
 body {
     font: 16px/26px 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    min-width: 560px;
 }
 
 .wrapper {
@@ -162,17 +163,24 @@ Author's custom styles
 }
 
 .main .banner{
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     line-height: 2rem;
     background: #CCC;
     height: 24rem;
     border-radius: 0 0 7em 7em;
+    position: relative;
 }
 .main .banner h2{
     font-weight: normal;
     margin-left: 3rem;
-    min-width: 20rem;
+    /* min-width: 10rem; */
+    position: absolute;
+    right: 10%;
+    top: 6rem;
+    width: 12em;
+    background: rgba(204, 204, 204, .5);
+    border-radius: 3rem;
 }
 .main .banner img{
     height: 300px;
