@@ -177,10 +177,12 @@ Author's custom styles
     /* min-width: 10rem; */
     position: absolute;
     right: 10%;
-    top: 6rem;
+    top: 4.5rem;
     width: 12em;
-    background: rgba(204, 204, 204, .5);
-    border-radius: 3rem;
+    background: rgba(204, 204, 204, 0.8);
+    border-radius: 3rem 0 3rem 3rem;
+    padding: 2rem 0 2rem 2rem;
+
 }
 .main .banner img{
     height: 300px;
