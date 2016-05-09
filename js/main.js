@@ -1,8 +1,8 @@
 function GetUserIP(){
   var ret_ip;
   $.ajaxSetup({async: false});
-  $.get('http://jsonip.com/', function(r){ 
-    ret_ip = r.ip; 
+  $.get('http://jsonip.com/', function(r){
+    ret_ip = r.ip;
   });
   return ret_ip;
 }
@@ -34,13 +34,5 @@ $(document).ready(function(){
         postToGoogle();
         return false;
     });
-    $("form.subscribe").validate({
-        rules: {
-            email: {
-                required: true,
-                email: true
-            }
-        }
-    });
-
+    $("form.subscribe").validate();
 });
