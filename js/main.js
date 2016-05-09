@@ -7,6 +7,11 @@ function GetUserIP(){
   return ret_ip;
 }
 
+function message(m){
+    $("form.subscribe").empty();
+    $("form.subscribe").append("<h3>" + m + "</h3>");
+}
+
 function postToGoogle() {
     var email = $('.email').val();
     var ip = GetUserIP();
@@ -20,10 +25,10 @@ function postToGoogle() {
         dataType: "xml",
         statusCode: {
             0: function() {
-                //Success message
+                message("You have successfully subscribed");
             },
             200: function() {
-                //Success Message
+                message("Subscription failed, please contact us via our email");
             }
         }
     });
