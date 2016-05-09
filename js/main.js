@@ -39,5 +39,4 @@ $(document).ready(function(){
         postToGoogle();
         return false;
     });
-    $("form.subscribe").validate();
 });
