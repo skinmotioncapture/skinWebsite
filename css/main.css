@@ -168,7 +168,7 @@ Author's custom styles
     line-height: 2rem;
     background: #CCC;
     height: 24rem;
-    border-radius: 0 0 7em 7em;
+    /*border-radius: 0 0 7em 7em;*/
     position: relative;
 }
 .main .banner h2{
@@ -180,7 +180,7 @@ Author's custom styles
     top: 4.5rem;
     width: 12em;
     background: rgba(204, 204, 204, 0.8);
-    border-radius: 3rem 0 3rem 3rem;
+    /*border-radius: 3rem 0 3rem 3rem;*/
     padding: 2rem 0 2rem 2rem;
 
 }
