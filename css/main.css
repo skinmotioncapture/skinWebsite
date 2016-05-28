@@ -6,6 +6,21 @@ html {
     line-height: 1.4;
 }
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+   color:    #2b3c4b;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #2b3c4b;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #2b3c4b;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #2b3c4b;
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -70,17 +85,6 @@ ALL: Orange Theme
     border-bottom: 20px solid #e44d26;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
 .title {
     color: white;
 }
@@ -135,10 +139,6 @@ MOBILE: Main
     padding: 0px 5% 10px;
 }
 
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
 
 /* ===============
 ALL: IE Fixes
@@ -156,7 +156,8 @@ Author's custom styles
 .logo{
     height: 5em;
     position: absolute;
-    padding-top: 1em;
+    padding-top: 2em;
+    padding-left: 2em;
     padding-bottom: 1em;
 }
 .logo-img{
@@ -167,19 +168,19 @@ Author's custom styles
     /*display: flex;*/
     align-items: center;
     line-height: 2rem;
-    background: #CCC;
+    background: #2b3c4b;
     height: 24rem;
     /*border-radius: 0 0 7em 7em;*/
     position: relative;
 }
-.main .banner h2{
+.main .banner-text{
     font-weight: normal;
-    margin-left: 3rem;
     /* min-width: 10rem; */
     position: absolute;
-    left: 10%;
     top: 8rem;
     width: 12em;
+    color: white;
+    padding-left: 2em;
 }
 .main .banner img.highlight{
     float: right;
@@ -194,29 +195,35 @@ Author's custom styles
     margin: auto;
     padding-top: 3rem;
     padding-bottom: 3.5rem;
+    background: #d77500;
 }
 
+.main .subscribe-box{
+    width: 61.8%;
+    height: 3em;
+    line-height: 3em;
+    display: flex;
+    border: solid #2b3c4b 3px;
+    border-radius: 3em;
+    color: wheat;
+}
 .main .subscribe .submit{
     margin-left: 1rem;
     line-height: 1.5rem;
     font-size: 1.5rem;
     border: none;
     padding: 0.5rem 1.5rem;
-    color: white;
-    background: #201238;
+    background: #2b3c4b;
     border-radius: 0 3em 3em 0;
-}
-.main .subscribe-box{
-    width: 61.8%;
-    height: 3em;
-    line-height: 3em;
-    display: flex;
-    border: solid black 3px;
-    border-radius: 3em;
+    font-weight: bold;
+    color: #d77500;
 }
 .main .subscribe .submit:hover{
+    color: wheat;
+    outline: none;
 }
 .main .subscribe .submit:active{
+    outline: none;
 }
 
 textarea:focus, input:focus{
@@ -247,16 +254,21 @@ textarea:focus, input:focus{
     top: 0;
 }
 
-.contact-us{
-    background: #CCC;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    /*border-radius: 2em 2em 0 0;*/
+footer{
+    position: relative;
+    background: #2b3c4b;
+    padding: 0.5em 3em;
+    color: #d77500;
 }
 
-.contact-us p{
-    padding-left: 1rem;
+.contact-us{
+    position: absolute;
+    line-height: 1em;
+    right: 3em;
+    margin-top: -0.5em;
+    top: 50%;
 }
+
 /* ==========================================================================
 Media Queries
 ========================================================================== */
