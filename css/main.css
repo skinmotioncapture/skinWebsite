@@ -156,9 +156,8 @@ Author's custom styles
 ========================================================================== */
 
 
-.header-container .logo{
-    height: 100px;
-    padding: 1em;
+.logo{
+    height: 5em;
 }
 
 .main .banner{
