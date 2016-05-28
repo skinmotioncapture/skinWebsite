@@ -61,10 +61,6 @@ body {
     min-width: 560px;
 }
 
-.wrapper {
-    width: 90%;
-    padding: 0 5%;
-}
 
 /* ===================
 ALL: Orange Theme
@@ -157,9 +153,14 @@ Author's custom styles
 ========================================================================== */
 
 
-.header-container .logo{
-    height: 100px;
-    padding: 1em;
+.logo{
+    height: 5em;
+    position: absolute;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.logo-img{
+    height: 100%;
 }
 
 .main .banner{
@@ -176,21 +177,18 @@ Author's custom styles
     margin-left: 3rem;
     /* min-width: 10rem; */
     position: absolute;
-    right: 10%;
-    top: 4.5rem;
+    left: 10%;
+    top: 8rem;
     width: 12em;
-    background: rgba(204, 204, 204, 0.8);
-    border-radius: 3rem 0 3rem 3rem;
-    padding: 2rem 0 2rem 2rem;
-
 }
-.main .banner img{
-    height: 300px;
+.main .banner img.highlight{
+    float: right;
+    height: 90%;
 }
 .main .subscribe {
-    min-width: 20rem;
-    max-width: 35rem;
+    width: 100vw;
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     height: 3rem;
     margin: auto;
@@ -204,21 +202,25 @@ Author's custom styles
     font-size: 1.5rem;
     border: none;
     padding: 0.5rem 1.5rem;
-    background: #f16529;
     color: white;
+    background: #201238;
+    border-radius: 0 3em 3em 0;
+}
+.main .subscribe-box{
+    width: 61.8%;
+    height: 3em;
+    line-height: 3em;
+    display: flex;
+    border: solid black 3px;
+    border-radius: 3em;
 }
 .main .subscribe .submit:hover{
-    background: #e44d26;
-    box-shadow: #f16529 1px 2px 2px;
 }
 .main .subscribe .submit:active{
-    background: #e44d26;
-    box-shadow: #f16529 -1px -2px 2px;
 }
 
 textarea:focus, input:focus{
     outline: none;
-    border-bottom: solid #e44d26;
 }
 
 .main .subscribe .email-wrapper{
@@ -226,11 +228,13 @@ textarea:focus, input:focus{
 }
 
 .main .subscribe .email{
+    padding-left: 2rem;
+    outline: none;
     width: 100%;
-    background: #ededed;
+    background: none;
     line-height: 2rem;
-    border-bottom: #f16529 solid;
     border-top: none;
+    border-bottom: none;
     border-left: none;
     border-right: none;
 }
@@ -340,7 +344,9 @@ WIDE: Main
     =============== */
 
 .wrapper {
-    width: 1026px; /* 1140px - 10% for margins */
+    width: auto; /* 1140px - 10% for margins */
+    padding-left: 10%;
+    padding-right: 10%;
     margin: 0 auto;
 }
 }
