@@ -5,6 +5,10 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
    color:    #2b3c4b;
@@ -212,10 +216,11 @@ Author's custom styles
     }
     .contact-us{
         position: absolute;
-        line-height: 1em;
+        line-height: 1rem;
         right: 3em;
-        margin-top: -0.5em;
+        margin-top: -0.5rem;
         top: 50%;
+        border-bottom: solid #d77550 2px;
     }
 }
 @media only screen and (max-width: 909px) {
@@ -233,7 +238,8 @@ Author's custom styles
         position: relative;
     }
     .main .banner img.highlight{
-        width: 100vw;
+        width: 90vw;
+        margin-left: 5vw;
     }
     .main .banner-text{
         font-weight: normal;
@@ -247,14 +253,13 @@ Author's custom styles
         height: 3rem;
         margin: auto;
         background: #d77500;
-        padding-top: 70vh;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-top: 75vh;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         height: 20vh;
     }
     .contact-us{
-        line-height: 1em;
-        margin-top: 0.5em;
+        line-height: 1rem;
         text-align: right;
     }
 }
@@ -265,7 +270,7 @@ Author's custom styles
     border: solid #2b3c4b 3px;
     border-radius: 3em;
     color: wheat;
-    padding-left: 2em;
+    padding-left: 1em;
 }
 .main .subscribe .submit{
     margin-left: 1rem;
@@ -318,6 +323,7 @@ footer{
     background: #2b3c4b;
     padding: 0.5em 3em;
     color: #d77500;
+    font-size: 0.8em;
 }
 
 /* ==========================================================================
