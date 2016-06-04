@@ -178,12 +178,12 @@ Author's custom styles
 }
 
 body{
-    min-width: 440px;
+    min-width: 300px;
     color: #2b3c4b;
 }
-@media only screen and (min-width: 910px) {
+@media only screen and (min-width: 801px) {
     body{
-        min-width: 910px;
+        min-width: 801px;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -245,31 +245,27 @@ body{
         border-bottom: solid #d77550 2px;
     }
 }
-@media only screen and (max-width: 909px) {
+@media only screen and (max-width: 800px) {
     body{
-        max-width: 909px;
-        width: 100%;
+        max-width: 800px;
+        width: 100vw;
     }
     .main .banner{
         /*display: flex;*/
         align-items: center;
         line-height: 2rem;
         background: #2b3c4b;
-        height: 80vh;
+        height: 120vh;
         /*border-radius: 0 0 7em 7em;*/
         position: relative;
     }
     .main .banner img.highlight{
         margin-top: 10vh;
-        height: 55vh;
-        margin-right: 8vw;
-        right: 0;
-        position: absolute;
+        width: 90%;
     }
     .main .banner-text{
         font-weight: normal;
         padding-top: 35vh;
-        height: 45vh;
         color: white;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -277,11 +273,8 @@ body{
     .main .subscribe {
         margin: auto;
         background: #d77500;
-        padding-top: 75vh;
-        height: 20vh;
         display: flex;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding: 5% 10%;
         align-items: stretch;
         flex-direction: column;
     }
