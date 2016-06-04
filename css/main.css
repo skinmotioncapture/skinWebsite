@@ -263,18 +263,20 @@ body{
         align-items: center;
         line-height: 2rem;
         background: #2b3c4b;
-        height: 120vh;
+        height: 40vh;
+        border-bottom: solid #2b3c4b 10em;
+        padding-bottom: 90vw;
         /*border-radius: 0 0 7em 7em;*/
         position: relative;
     }
     .main .banner img.highlight{
-        margin-top: 10vh;
+        margin-top: 5em;
         width: 90%;
     }
     .main .banner-text{
         margin: 0;
         font-weight: normal;
-        padding-top: 35vh;
+        padding-top: 8em;
         color: white;
         padding-left: 2rem;
         padding-right: 2rem;
