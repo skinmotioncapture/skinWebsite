@@ -177,6 +177,11 @@ Author's custom styles
     height: 100%;
 }
 
+body{
+    min-width: 440px;
+    color: #2b3c4b;
+
+}
 @media only screen and (min-width: 910px) {
     body{
         min-width: 910px;
@@ -194,7 +199,7 @@ Author's custom styles
         margin-top: 2em;
         position: absolute;
         right: 3em;
-        height: 35em;
+        height: 90%;
     }
     .main .banner-text{
         font-weight: normal;
@@ -206,13 +211,19 @@ Author's custom styles
         padding-left: 2em;
     }
     .main .subscribe {
-        height: 3rem;
         margin: auto;
-        padding-top: 3rem;
-        padding-bottom: 3.5rem;
         background: #d77500;
-        padding-left: 3em;
-        padding-right: 34em;
+        display: flex;
+        align-items: space-around;
+        padding: 1.8rem 10%;
+        flex-direction: column;
+    }
+    footer{
+        position: relative;
+        background: #2b3c4b;
+        padding: 0.5em 3em;
+        color: #d77500;
+        font-size: 0.8em;
     }
     .contact-us{
         position: absolute;
@@ -241,7 +252,8 @@ Author's custom styles
         margin-top: 10vh;
         height: 55vh;
         margin-right: 8vw;
-        float: right;
+        right: 0;
+        position: absolute;
     }
     .main .banner-text{
         font-weight: normal;
@@ -252,19 +264,38 @@ Author's custom styles
         padding-right: 2rem;
     }
     .main .subscribe {
-        height: 3rem;
         margin: auto;
         background: #d77500;
         padding-top: 75vh;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
         height: 20vh;
+        display: flex;
+        padding-left: 10%;
+        padding-right: 10%;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        background: #2b3c4b;
+        color: #d77500;
+        font-size: 0.8em;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+        line-height: 1rem;
     }
     .contact-us{
-        line-height: 1rem;
-        text-align: right;
+        padding: 1rem 0 0 0;
+        border-bottom: solid #d77550 2px;
     }
 }
+
+.main .subscribe-intro{
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.4rem;
+}
+
 .main .subscribe-box{
     height: 3em;
     line-height: 3em;
@@ -320,13 +351,6 @@ textarea:focus, input:focus{
     top: 0;
 }
 
-footer{
-    position: relative;
-    background: #2b3c4b;
-    padding: 0.5em 3em;
-    color: #d77500;
-    font-size: 0.8em;
-}
 
 /* ==========================================================================
 Media Queries
