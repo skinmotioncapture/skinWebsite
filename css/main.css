@@ -202,10 +202,9 @@ body{
         align-items: center;
         line-height: 2rem;
         background: #2b3c4b;
-        flex: 2 0 28rem;
+        flex: 1 0 28rem;
         /*border-radius: 0 0 7em 7em;*/
         position: relative;
-        flex-grow: 3;
     }
     .main .banner img.highlight{
         margin-top: 2em;
@@ -229,6 +228,8 @@ body{
         align-items: space-around;
         padding: 1.8rem 10%;
         flex-direction: column;
+        flex-grow: 2;
+        justify-content: center;
     }
     footer{
         position: relative;
@@ -263,9 +264,10 @@ body{
         align-items: center;
         line-height: 2rem;
         background: #2b3c4b;
-        height: 40vh;
-        border-bottom: solid #2b3c4b 10em;
-        padding-bottom: 90vw;
+        height: 32em;
+        /*border-bottom: solid #2b3c4b 13em;*/
+        box-sizing: content-box;
+        padding-bottom: 50vw;
         /*border-radius: 0 0 7em 7em;*/
         position: relative;
     }
