@@ -207,10 +207,10 @@ body{
         position: relative;
     }
     .main .banner img.highlight{
-        margin-top: 2em;
+        margin-top: 3em;
         position: absolute;
-        right: 3em;
-        height: 90%;
+        right: 6em;
+        height: 80%;
     }
     .main .banner-text{
         font-weight: normal;
