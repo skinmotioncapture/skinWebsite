@@ -202,12 +202,12 @@ body{
         align-items: center;
         line-height: 2rem;
         background: #2b3c4b;
-        flex: 1 0 28rem;
+        flex: 1 0 32rem;
         /*border-radius: 0 0 7em 7em;*/
         position: relative;
     }
     .main .banner img.highlight{
-        margin-top: 3em;
+        top: 10%;
         position: absolute;
         right: 6em;
         height: 80%;
@@ -220,7 +220,7 @@ body{
         margin: 0;
         width: 12em;
         color: white;
-        padding-left: 2em;
+        padding-left: 10%;
     }
     .main .subscribe {
         background: #d77500;
@@ -247,11 +247,16 @@ body{
         border-bottom: solid #d77550 2px;
     }
 }
-@media only screen and (min-width: 701px)  and (max-width: 800px){
+@media only screen and (min-width: 701px)  and (max-width: 1000px){
+    .main .banner{
+        flex: 1 0 28rem;
+    }
     .main .banner img.highlight{
-        width: 55%;
+        width: 50%;
         height: auto;
-        top: 10%;
+        bottom: 10%;
+        top: auto;
+        right: 3em;
     }
 }
 @media only screen and (max-width: 700px) {
@@ -264,16 +269,17 @@ body{
         align-items: center;
         line-height: 2rem;
         background: #2b3c4b;
-        height: 32em;
+        height: 35em;
         /*border-bottom: solid #2b3c4b 13em;*/
         box-sizing: content-box;
-        padding-bottom: 50vw;
+        padding-bottom: 45vw;
         /*border-radius: 0 0 7em 7em;*/
         position: relative;
     }
     .main .banner img.highlight{
         margin-top: 5em;
-        width: 90%;
+        margin-left: 8%;
+        width: 80%;
     }
     .main .banner-text{
         margin: 0;
