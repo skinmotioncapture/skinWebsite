@@ -25,7 +25,7 @@ function postToGoogle() {
         dataType: "xml",
         statusCode: {
             0: function() {
-                message("You have successfully subscribed");
+                message("You have now successfully subscribed");
             },
             200: function() {
                 message("Subscription failed, please contact us via our email");
